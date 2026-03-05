@@ -1,0 +1,21 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load dataset
+df = pd.read_csv("students__large.csv")
+
+# Preview data
+print(df.head())
+
+# Shape of data
+print("Rows, Columns:", df.shape)
+
+# Column names
+print(df.columns.tolist())
+
+# Basic info
+df.info()
+
+# Summary statistics
+df.describe()
